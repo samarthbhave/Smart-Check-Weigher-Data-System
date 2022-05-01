@@ -1,0 +1,80 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Espressif:ESP8266EX U?
+U 1 1 61B623F4
+P 3950 3450
+F 0 "U?" H 3950 2261 50  0000 C CNN
+F 1 "ESP8266EX" H 3950 2170 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 3950 2150 50  0001 C CNN
+F 3 "http://espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf" H 4050 2150 50  0001 C CNN
+	1    3950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 61B650B7
+P 2100 3950
+F 0 "Y?" V 2054 4081 50  0000 L CNN
+F 1 "Crystal" V 2145 4081 50  0000 L CNN
+F 2 "" H 2100 3950 50  0001 C CNN
+F 3 "~" H 2100 3950 50  0001 C CNN
+	1    2100 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61B65E8E
+P 1450 3600
+F 0 "C?" V 1198 3600 50  0000 C CNN
+F 1 "C" V 1289 3600 50  0000 C CNN
+F 2 "" H 1488 3450 50  0001 C CNN
+F 3 "~" H 1450 3600 50  0001 C CNN
+	1    1450 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61B6641D
+P 1450 4300
+F 0 "C?" V 1198 4300 50  0000 C CNN
+F 1 "C" V 1289 4300 50  0000 C CNN
+F 2 "" H 1488 4150 50  0001 C CNN
+F 3 "~" H 1450 4300 50  0001 C CNN
+	1    1450 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 3600 1300 4300
+Wire Wire Line
+	1600 3600 2100 3600
+Wire Wire Line
+	2100 3600 2100 3800
+Wire Wire Line
+	1600 4300 2100 4300
+Wire Wire Line
+	2100 4300 2100 4100
+Wire Wire Line
+	2100 3600 3050 3600
+Wire Wire Line
+	3050 3600 3050 3750
+Connection ~ 2100 3600
+Wire Wire Line
+	2100 4300 3050 4300
+Wire Wire Line
+	3050 4300 3050 4250
+Connection ~ 2100 4300
+$EndSCHEMATC

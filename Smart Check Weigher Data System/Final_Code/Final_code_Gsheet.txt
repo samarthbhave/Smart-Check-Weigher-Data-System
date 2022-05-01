@@ -1,0 +1,82 @@
+function doGet(e) { 
+  Logger.log( JSON.stringify(e) );
+  var result = 'Ok';
+  if (e.parameter == 'undefined') {
+    result = 'No Parameters';
+  }
+  else {
+    var sheet_id = '1a6DXmI-82zBF7oVdPcPiEgZRCXXCtTfIAvwX30j2U2w'; 	// Spreadsheet ID
+    var sheet = SpreadsheetApp.openById(sheet_id).getActiveSheet();
+    var newRow = sheet.getLastRow() + 1;						
+    var rowData = [];
+    var Curr_Date = new Date();
+    rowData[0] = Curr_Date; // Date in column A
+    var Curr_Time = Utilities.formatDate(Curr_Date, "Asia/Kolkata", 'HH:mm:ss');
+    rowData[1] = Curr_Time; // Time in column B
+    for (var param in e.parameter) {
+      Logger.log('In for loop, param=' + param);
+      var value = stripQuotes(e.parameter[param]);
+      Logger.log(param + ':' + e.parameter[param]);
+      switch (param) {
+        case 'weight':
+          rowData[2] = value; // Weight in column C
+          result = 'Weight Written on column C'; 
+          break;
+        case 'grossweight':
+          rowData[3] = value; // Grossweight in column D
+          result += ' GrossWeight Written on column D'; 
+          break;
+        case 'download' :
+          downloadXLSX();
+          break;  
+        default:
+          result = "unsupported parameter";
+      }
+    }
+    Logger.log(JSON.stringify(rowData));
+    var newRange = sheet.getRange(newRow, 1, 1, rowData.length);
+    newRange.setValues([rowData]);
+  }
+  return ManageSheet(e);
+  return ContentService.createTextOutput(result);
+}
+function stripQuotes( value ) {
+  return value.replace(/^["']|['"]$/g, "");
+}
+function doPost(e) {
+  return ManageSheet(e);
+}
+function ManageSheet(e) {
+  //READ ALL RECORDS
+  if ( e.parameter.func == "ReadAll") {
+    var ss = SpreadsheetApp.getActive();
+    var sh = ss.getSheets()[0]; 
+    var rg = sh.getDataRange().getValues(); 
+    var outString = '';
+      for(var row=0 ; row<rg.length ; ++row){
+        outString += rg[row].join(',') + '\n';  
+      } 
+  if (e.parameter.func == "DownloadAll")
+  {
+    var ssID = SpreadsheetApp.getActive().getId();
+    var URL = 'https://docs.google.com/spreadsheets/d/'+ssID+'/export?format=xlsx';
+    var blob;
+    var response = "";
+    var token = ScriptApp.getOAuthToken();
+    var parentFolder = DriveApp.getFolderById('1MslRDrKLe4T1t2Wy1ZrHmSrf00X_ShBB'); //add this line... 
+
+    response = UrlFetchApp.fetch(URL, {
+      headers: {
+        'Authorization': 'Bearer ' +  token
+      }
+    });
+
+  blob = response.getBlob().setName('Sheets.xlsx');// Convert the response to a blob 
+
+  parentFolder.createFile(blob); // Create a file with the blob and place it to Drive's root
+  }
+    return ContentService.createTextOutput(outString).setMimeType(ContentService.MimeType.TEXT);
+  }  
+}
+
+

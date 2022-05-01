@@ -1,0 +1,38 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Block Diagram}}{6}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Circuit Diagram}}{7}{figure.2.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces ESP8266}}{9}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Actual image of the Die of ESP chip}}{10}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Different versions of ESP}}{10}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Hardware in the Industry}}{11}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Connection of DAT-400 to 4 load-cells}}{11}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Frame Format}}{12}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Maximum Frequency to baud rate}}{12}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces RS232 used by DAT-400}}{13}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces RS485 used by DAT-400}}{13}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Front Panel of DAT-400}}{14}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Function during the weight display}}{14}{figure.3.11}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Arduino IDE}}{17}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Google App Scripts Image}}{18}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces MIT App inventor Screen}}{20}{figure.4.3}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Initialization of Arduino Code}}{22}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Setup of Arduino Code}}{23}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Setup (contd) of Arduino Code}}{23}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Loop routine of Arduino Code}}{24}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Send data sub-routine of Arduino Code}}{24}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Send data sub-routine upload part of Arduino Code}}{25}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Gsheet Code}}{26}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Gsheet code for the android app}}{27}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Initialization of android app}}{27}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Reception of data on android app}}{28}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Reading data on android app}}{28}{figure.5.11}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Result of Arduino Code}}{30}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Result of Arduino Code on Google sheets}}{31}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Result of the MIT app inventor code}}{32}{figure.6.3}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }

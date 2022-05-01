@@ -1,0 +1,49 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Background of the project}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Problem Statement and our Solution}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Project Objective}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Significance of the Project}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Project Idea}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Block Diagram}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Description of Block Diagram}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Theory of Weight Scales}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.4}{Circuit Diagram}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{Hardware Components}{}% 11
+\BOOKMARK [1][-]{section.3.1}{ESP8266}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{DAT-400}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.2.1}{Introduction}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.2}{Frame Format}{section.3.2}% 15
+\BOOKMARK [1][-]{section.3.3}{Protocols Used}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.1}{RS232}{section.3.3}% 17
+\BOOKMARK [2][-]{subsection.3.3.2}{RS485}{section.3.3}% 18
+\BOOKMARK [1][-]{section.3.4}{Front Panel of DAT-400}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.4.1}{Display}{section.3.4}% 20
+\BOOKMARK [2][-]{subsection.3.4.2}{Led indicators}{section.3.4}% 21
+\BOOKMARK [2][-]{subsection.3.4.3}{Keyboard Functions}{section.3.4}% 22
+\BOOKMARK [0][-]{chapter.4}{Software Requirements}{}% 23
+\BOOKMARK [1][-]{section.4.1}{Arduino IDE}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.2}{Google App Scripts}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.2.1}{General information}{section.4.2}% 26
+\BOOKMARK [2][-]{subsection.4.2.2}{Benefits}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.3}{Limitations}{section.4.2}% 28
+\BOOKMARK [1][-]{section.4.3}{MIT App inventor}{chapter.4}% 29
+\BOOKMARK [0][-]{chapter.5}{Codes}{}% 30
+\BOOKMARK [1][-]{section.5.1}{Arduino Code}{chapter.5}% 31
+\BOOKMARK [2][-]{subsection.5.1.1}{Initialization}{section.5.1}% 32
+\BOOKMARK [2][-]{subsection.5.1.2}{Setup Code}{section.5.1}% 33
+\BOOKMARK [2][-]{subsection.5.1.3}{Loop Code}{section.5.1}% 34
+\BOOKMARK [2][-]{subsection.5.1.4}{Google sheets initialization}{section.5.1}% 35
+\BOOKMARK [2][-]{subsection.5.1.5}{Google Sheets Data-Upload}{section.5.1}% 36
+\BOOKMARK [1][-]{section.5.2}{Google Appscript Code}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.2.1}{Google Appscript initialization}{section.5.2}% 38
+\BOOKMARK [2][-]{subsection.5.2.2}{Google Appscript Read Code}{section.5.2}% 39
+\BOOKMARK [1][-]{section.5.3}{MIT app inventor code}{chapter.5}% 40
+\BOOKMARK [2][-]{subsection.5.3.1}{App Inventor Initialization}{section.5.3}% 41
+\BOOKMARK [2][-]{subsection.5.3.2}{App Inventor Formating}{section.5.3}% 42
+\BOOKMARK [2][-]{subsection.5.3.3}{App Inventor Read Function}{section.5.3}% 43
+\BOOKMARK [0][-]{chapter.6}{Results}{}% 44
+\BOOKMARK [1][-]{section.6.1}{Arduino Code Result}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.2}{Google app script code result}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.3}{MIT app inventor result}{chapter.6}% 47
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 48
+\BOOKMARK [0][-]{chapter.8}{Future Work}{}% 49
